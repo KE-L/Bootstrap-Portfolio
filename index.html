@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,45 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Kas//Web Developer </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-</head>
+<link rel="stylesheet" href="./Assets/CSS/style.css">
+  </head>
 <body>
     <!-- top navbar with links to portfolio> navigating to appropriate sections  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end">
       <!-- navbar commented out//introduced pic/icon -->
-        <a class="navbar-brand" href="#"></a>
-        <img width="80px" height="70px" src="./images/IMG_0420.jpg">
+        <img width="80px" height="70px" src="./Assets/images/IMG_0420.jpg" class="rounded-circle">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+        <div class="navbar" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About Kassy </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                My Work
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+              <a class="nav-link" href="#worksection">My Work</a> </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a> </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactme">Contact Me</a> </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          
         </div>
       </nav>
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -53,85 +36,147 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
-
 <!-- Hero section > inc jumbotron with name & info -->
-<div class="jumbotron">
-  <h1 class="display-4">Welcome, </h1>
-  <p class="lead">To my page, designed by bootstrap.</p>
+<div class="jumbotron-fluid">
+  <img src="./Assets/images/PP 4.jpg" alt="my pic" width="160px" height="160px" class="rounded-pill float-left">
+  <h1 class="display-4">Welcome World, </h1>
+  <p class="lead" id="textheadline">To my portfolio, <br>
+    designed with bootstrap.</p>
   <hr class="my-4">
-  <p>See links to my work below</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p id="aboutmetext"> I'm Kassy,
+    My professional background is in London's Build to Rent market. <br>
+    I enjoyed working within the emerging sector of the Property industry. & became emersed the tech-focused environment. <br>
+    
+    My interests peaked & I embarked on a journey to further my understanding. <br>
+    Now, I am persuing a qualification in Web Development. <br>
+    This is a collection of my work.
+  </p>
 </div>
-<!-- work section> displaying work in grid>inc placeholder images & bootstrap cards with overview/description of work -->
-<div class="card-columns">
-  <div class="card">
-    <img src="./images/IMG_0372.jpg" class="card-img-top" alt="monkey sculptor">
+<!-- my work section -->
+
+<div class="container-fluid" id="worksection">
+  <h1 class="d-flex justify-content-center display-4"> My Work  </h1>
+
+  <div class="row">
+  <div class="card col-sm-12 col-lg-3">
+      <!-- code refactoring project -->
+    <a href="https://ke-l.github.io/Kassy-Essiet-Module-1-Code-Refactoring/"> <img src="./Assets/images/IMG_0372.jpg" class="card-img-top" alt="monkey art"> </a>
     <div class="card-body">
-      <h5 class="card-title">Card title that wraps to a new line</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Code Refactoring</h5>
+      <p class="card-text">
+        This project's purpose: <br>
+        To improve accessibility for Horiseon’s website by refactoring the existing code. 
+        The main ideas were to review, revise & consolidate the existing CSS code, improve semantic efficiency & improve search engine optimisation.
+      </p>
     </div>
   </div>
-  <div class="card p-3">
-    <blockquote class="blockquote mb-0 card-body">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <img src="./images/IMG_0739.jpg" class="card-img-top" alt="gallery birdseye">
+  <!-- prework study guide -->
+  <div class="card col-sm-12 col-lg-3">
+    <a href="https://ke-l.github.io/prework-study-guide/"> <img src="./Assets/images/galleryview.jpg" class="card-img-top" alt="gallery birdseye"> </a> 
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5 class="card-title">My Prework Study guide</h5>
+      <p class="card-text">This project's purpose: <br/>
+         To build a libary of notes: <br/>
+         highlighting elements of HTML, CSS, Git, and JavaScript.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card bg-primary text-white text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer text-white">
-        <small>
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card text-center">
+  <!-- css project  -->
+  <div class="card col-sm-12 col-lg-3">
+   <a href="https://ke-l.github.io/My-CSS-Portfolio/"><img src="./Assets/images/facesinpink.jpg" class="card-img-top" alt="pink faces"></a>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+      <h5 class="card-title">My CSS Webpage</h5>
+      <p class="card-text">This project's purpose: <br/>
+         To build a portfolio page. <br/>
+         Using CSS to illustrate my work & working processes</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div> 
+  <!-- bootstrap project -->
+  <div class="card col-sm-12 col-lg-3">
+    <img src="./Assets/images/bootstrap.jpg" class="card-img-top" alt="girl wars">
+    <div class="card-body">
+      <h5 class="card-title">Bootstrap Project</h5>
+      <p class="card-text">This project's purpose: <br/>
+         To build a webpage curated by Bootstrap. <br/>
+      </p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
-    <img src="./images/Gallery.png" class="card-img" alt="gallery display">
   </div>
-  <div class="card p-3 text-right">
-    <blockquote class="blockquote mb-0">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
+</div>
+<div class="container-fluid">
+  <h1 class="d-flex justify-content-center display-4"</h1> Upcoming Works</h1>
+  <div class="row">
+    <!-- fundamentals javascript -->
+  <div class="card col-sm-12 col-lg-3">
+    <img src="./Assets/images/ricksaw .jpg" class="card-img-top" alt="monk rickshaw">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+      <h5 class="card-title">JavaScript Fundamentals</h5>
+      <p class="card-text">
+       More details, coming soon... <br>
+      </p>
+    </div>
+  </div>
+  <!-- intermediate JavaScript-->
+  <div class="card col-sm-12 col-lg-3">
+    <img src="./Assets/images/thaitatt.jpg" class="card-img-top" alt="thai tattoo">
+    <div class="card-body">
+      <h5 class="card-title">Intermediate JavaScript</h5>
+      <p class="card-text">More details, coming soon...
+        </p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
+  </div>
+  <!-- apis  -->
+  <div class="card col-sm-12 col-lg-3">
+    <img src="./Assets/images/neoncity.jpg" class="card-img-top" alt="neon city" > 
+    <div class="card-body">
+      <h5 class="card-title">APIs</h5>
+      <p class="card-text">More details, coming soon...</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div> 
+  <!-- 3rd party apis -->
+  <div class="card col-sm-12 col-lg-3">
+    <img src="./Assets/images/Stairway.jpg" class="card-img-top" alt="stairway">
+    <div class="card-body">
+      <h5 class="card-title">Third Party APIs</h5>
+      <p class="card-text">More details, coming soon... <br/>
+      </p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
   </div>
 </div>
 <!-- Skills section>listing skills expected to learn from bootstrap inc in same row - "about me" section-->
-
-
+<div id="skills">
+  <h1 class="d-flex justify-content-center display-4"</h1> My Skills</h1>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Bootstrap</li>
+  <li class="list-group-item">CSS</li>
+  <li class="list-group-item">Git</li>
+  <li class="list-group-item">HTML</li>
+</ul>
+</div>
 <!-- footer with hoover effect on hyperlinks> all buttons should display a box shadow upon hoover -->
+  <!-- footer -->
+  <div class="jumbotron-fluid" id="contactme">
+    <h1 class="d-flex justify-content-center display-4"> Contact Me</h1>
+    <hr class="my-4">
+      <div class="card-body d-flex justify-content-start d-flex justify-content-center" id="contacttags">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link contactlinks" href="https://www.linkedin.com/in/kassy-essiet-labukas-581a34122/">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contactlinks" href="https://github.com/KE-L">Github</a>
+          </li>
+        </ul>
+        <br>
+      </div>
+        <a href="#" class="btn btn-primary d-flex justify-content-center ">Back to top of the page</a>
+
+
+
+

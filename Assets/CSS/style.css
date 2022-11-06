@@ -1,0 +1,17 @@
+#navbar { background-color: powderblue;
+    justify-content: flex-end;}
+
+#textheadline{ margin-left: 200px;}
+#aboutmetext {margin: 50px;}
+
+
+.contactlinks:hover {
+    box-shadow: 5px 10px 20px rgb(171, 170, 209);}
+
+#worksection, 
+#contactme,
+#skills
+{ justify-content:center;
+    background-color: aliceblue;}
+
+#contacttags { background-color: white;}
