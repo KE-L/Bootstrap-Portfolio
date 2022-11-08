@@ -21,15 +21,16 @@ The purpose of this project is to build a portfolio page with Bootstrap. To illu
 
 
 # Challenges & Lessons:
-* Committing to a HTML structure & approach to page layout 
+* Resolving the HTML structure & first approach to page layout 
 * Effectively naming classes & ids for streamlined design
 * Positioning using Bootstrap concepts
 
 # Link 
-
+https://ke-l.github.io/Bootstrap-Portfolio/
 
 
 # Preview
+![ke-l github io_Bootstrap-Portfolio_](https://user-images.githubusercontent.com/115717787/200689131-a783c2d8-2683-43d9-a5e7-f6ac39650883.png)
 
 
 # Contact:
