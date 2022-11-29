@@ -1,36 +1,34 @@
 # Bootstrap-Portfolio
 
 # Description:
-The purpose of this project is to build a portfolio page with Bootstrap. To illustrate my work & working processes. 
+The purpose of this project is to create an application which generates random password, which displays in the browser. 
 
 # Project Requirements/Acceptance Criteria 
-* A navigation menu at the top of the page
-* Navigational links function & navigate as expected
-* A jumbotron including a picture, name & any other relevant information
-* "Work" section with projects, contained in Bootstrap cards & displayed in a grid 
-* Ensure each card contains the project's description 
-* Include a section listing skills 
-* Include an "About Me" section (confirmed this is not required in the same row as "Skills" , with class teacher & TAs) 
-* Footer section including hyperlinks & box shadow upon hover  
+* Generate a random password powered by JavaScript code, to dynamically feature HTML & CSS
+* Present a series of prompts for password criteria
+* Code should validate for each input and at least one character type should be selected
+* Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
 # Core ideas: 
-* Employing Bootstrap techniques 
-* Employing Bootstrap Grids 
-* Reducing Media Queries
-* Bootstrap navbar
+* Employing Prompts & confirm to define user choice 
+* Storing variables to inform selection
+* Engaging variables with random function 
+* Introducting a random seletion from each array
+* Reducing charaters repeating in error (trim) 
+* Identifying correct for loop to adapt to varying password length 
 
 
 # Challenges & Lessons:
-* Resolving the HTML structure & first approach to page layout 
+* Adapting to password length critera in password generation 
 * Effectively naming classes & ids for streamlined design
-* Positioning using Bootstrap concepts
+* Positioning corrective statements to ensure selection critera is met 
 
 # Link 
-https://ke-l.github.io/Bootstrap-Portfolio/
+
 
 
 # Preview
-![ke-l github io_Bootstrap-Portfolio_](https://user-images.githubusercontent.com/115717787/200689131-a783c2d8-2683-43d9-a5e7-f6ac39650883.png)
+
 
 
 # Contact:
